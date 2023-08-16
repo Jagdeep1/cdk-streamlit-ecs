@@ -5,10 +5,10 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install streamlit
-
 WORKDIR /app
 COPY . /app
+
+RUN pip install -r requirements.txt
 
 EXPOSE 8501
 

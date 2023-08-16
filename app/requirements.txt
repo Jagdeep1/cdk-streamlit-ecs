@@ -1,1 +1,6 @@
 streamlit
+langchain==0.0.148
+sagemaker
+boto3
+faiss-cpu
+pypdf
